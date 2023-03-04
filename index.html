@@ -4,24 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Form</title>
   </head>
   <body>
     <form action="">
-			<label for="">Please, select fruit</label><br>
-      <select name="goods">
-				<option disabled selected>select fruit</option>
-        <option value="" >apple</option>
-        <option value="">orange</option>
-        <option value="">banana</option>
-        <option value="">coconut</option>
-        <option value="">pineapple</option>
-        <option value="">watermealon</option>
-      </select><br>
-			<label>Choose quantity</label><br>
-      <input class="quantity" type="text" name="quantity" placeholder="input quantity" required />
-      <button class="button-submit" type="submit">Додати до кошика</button>
+      <label for="">Please, input your name</label>
+      <input
+        class="name"
+        type="text"
+        name="quantity"
+        placeholder="EX: Maryna"
+        required
+      />
+      <br />
+      <label for="">Please, select pizza</label><br />
+      <select name="pizzas">
+        <option disabled selected>select pizza</option>
+        <option value="">гавайська</option>
+        <option value="">пепероні</option>
+        <option value="">веганська</option></select
+      ><br />
+      <label>Choose size</label><br />
+      <input type="radio" name="size" value="маленька" />
+      <p clas="text">маленька</p>
+      <input type="radio" name="size" value="середня" />
+      <p clas="text">середня</p>
+      <input type="radio" name="size" value="велика" />
+      <p clas="text">велика</p>
+      <button class="button-submit" type="submit">Замовити</button>
     </form>
   </body>
 </html>
+

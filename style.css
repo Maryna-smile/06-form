@@ -6,16 +6,15 @@ form {
   border-radius: 20px;
 }
 select {
-  /* height: 130px; */
   padding: 5px 10px;
   margin-bottom: 20px;
   font-size: 16px;
 }
 label {
-    color: aliceblue;
+  color: aliceblue;
 }
 
-.quantity {
+.name {
   padding: 5px 10px;
   margin-bottom: 20px;
 }
@@ -31,5 +30,8 @@ label {
 .button-submit:hover {
   background-color: rgb(36, 131, 131);
   color: aliceblue;
-  font-size: 20px;
+}
+
+.text {
+  color: aliceblue;
 }
