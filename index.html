@@ -9,59 +9,59 @@
 	<title>Form</title>
 </head>
 <body>
-	<form action="">
+	<form>
 		<fieldset>
 			<legend>Персональне 1:</legend>
 			<div class="flex">
-				<label for="">Повне ім’я</label>
+				<label>Повне ім’я</label>
 				<input class="input-text" type="text" name="name" placeholder="Іванов Іван Іванович" required />
 			</div>
 			<div class="flex">
-				<label for="">Email</label>
+				<label>Email</label>
 				<input type="email" name="last name" placeholder="Ivanov@gmaail.com" required />
 			</div>
 		</fieldset>
 		<fieldset>
 			<legend>Безпека</legend>
 			<div class="flex">
-				<label for="">Пароль</label>
+				<label>Пароль</label>
 				<input type="password" name="password" required />
 			</div>
 			<div class="flex">
-				<label for="">Підтвердження пароля</label>
+				<label>Підтвердження пароля</label>
 				<input type="password" name="password" required />
 			</div>
 		</fieldset>
 		<fieldset>
 			<legend>Персональне 2:</legend>
 			<div class="flex">
-				<label for="">Стать</label>
+				<label>Стать</label>
 				<div class="mail">
-					<label for="">Жіноча</label>
+					<label>Жіноча</label>
 					<input class="male" type="radio" name="male" />
-					<label for="">Чоловіча</label>
+					<label>Чоловіча</label>
 					<input class="male" type="radio" name="male" />
 				</div>
 			</div>
 			<div class="flex">
-				<label for="">Вік</label>
+				<label>Вік</label>
 				<input type="number" name="age" min="18" max="100" required />
 			</div>
 		</fieldset>
 		<div class="general">
 			<div class="flex">
-				<label for="">Курс</label>
+				<label>Курс</label>
 				<select name="course" autofocus required>
-					<option value="0" disabled required selected>оберіть курс</option>
-					<option value="1">Front-End</option>
-					<option value="2">Back-End</option>
-					<option value="3">Project Managementd</option>
-					<option value="4">QA Manual</option>
+					<option value="" disabled selected>оберіть курс</option>
+					<option value="2">Front-End</option>
+					<option value="3">Back-End</option>
+					<option value="4">Project Managementd</option>
+					<option value="5">QA Manual</option>
 				</select>
 			</div>
 			<div class="addres">
 				<div class="flex">
-					<label for="">Повна адреса проживання</label>
+					<label>Повна адреса проживання</label>
 					<textarea name="adress" cols="25" rows="5"
 						placeholder="країна, область, населений пункт, вулиця, будинок"></textarea>
 				</div>
@@ -71,7 +71,7 @@
 		</div>
 		<div class="buttons">
 			<button class="button-53" type="reset">Очистити форму</button>
-			<button class="button-53" class="button-submit" type="submit">
+			<button class="button-53" type="submit">
 				Зареєструватись
 			</button>
 		</div>
