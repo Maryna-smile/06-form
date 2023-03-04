@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css">
     <title>Form</title>
-</head>
-<body>
-    <form action=""></form>
-</body>
+  </head>
+  <body>
+    <form action="">
+			<label for="">Please, select fruit</label><br>
+      <select name="goods">
+				<option disabled selected>select fruit</option>
+        <option value="" >apple</option>
+        <option value="">orange</option>
+        <option value="">banana</option>
+        <option value="">coconut</option>
+        <option value="">pineapple</option>
+        <option value="">watermealon</option>
+      </select><br>
+			<label>Choose quantity</label><br>
+      <input class="quantity" type="text" name="quantity" placeholder="input quantity" required />
+      <button class="button-submit" type="submit">Додати до кошика</button>
+    </form>
+  </body>
 </html>
