@@ -1,129 +1,165 @@
-form {
-  margin: 100px auto;
-  padding: 50px 30px 60px;
-  width: 500px;
-  border-radius: 15px;
-  background-color: rgb(172, 217, 247);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
 }
 
-fieldset {
-  margin-bottom: 30px;
-  padding: 10px;
-  width: 100%;
-  border-radius: 8px;
-  border-color: #fffccd;
+.background-one {
+  background-color: #151515;
 }
 
-label {
-  width: 200px;
+.background-two {
+  background-color: #151515;
 }
 
-select {
-  margin-bottom: 30px;
-  padding: 8px 10px;
-  background-color: rgb(188, 223, 247);
-  border: none;
-  border-radius: 8px;
-}
-
-textarea {
-  resize: none;
-  padding: 5px 10px;
-  background-color: rgb(188, 223, 247);
-  border: none;
-  border-radius: 8px;
-}
-
-input {
-  margin-bottom: 10px;
-  padding: 5px 10px;
-  background-color: rgb(188, 223, 247);
-  border: none;
-  border-radius: 8px;
-}
-
-.flex {
+.link-container {
   display: flex;
-}
-
-.mail {
-  margin-bottom: 5px;
-}
-.male {
-  margin-right: 25px;
-}
-
-.general {
-  margin-left: 13px;
-}
-
-.addres {
-  margin-bottom: 30px;
-}
-
-.agreement {
-  margin-bottom: 50px;
-}
-
-.age {
-  margin-bottom: 80px;
-}
-
-.buttons {
-  display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 50px;
-}
-.button-53 {
-  background-color: #f0f05d;
-  border: 0 solid #1342a0;
-  box-sizing: border-box;
-  color: #000000;
-  display: flex;
-  font-size: 16px;
-  font-weight: 700;
-  justify-content: center;
-  line-height: 1.75rem;
-  padding: 3px 5px 10px 5px;
+  align-items: center;
+  height: 100%;
   position: relative;
-  text-align: center;
-  text-decoration: none #000000 solid;
-  text-decoration-thickness: auto;
-  width: 125px;
-  max-width: 460px;
-  position: relative;
-  cursor: pointer;
-  transform: rotate(-2deg);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  z-index: 0;
 }
 
-.button-53:focus {
-  outline: 0;
+a {
+  font-family: "Bungee", cursive;
+  font-size: 2.5em;
 }
 
-.button-53:after {
+.link-one {
+  color: #53d9d1;
+  transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
+  line-height: 1em;
+}
+
+.link-one:hover {
+  color: #111;
+  transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
+
+  /* Thanks Chris Coyier, you got my back always. https://css-tricks.com/different-transitions-for-hover-on-hover-off/ */
+}
+
+.link-one::before {
   content: "";
   position: absolute;
-  border: 1px solid #000000;
-  bottom: 4px;
-  left: 4px;
-  width: calc(100% - 1px);
-  height: calc(100% - 1px);
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #53d9d1;
+
+  clip-path: circle(0% at 50% calc(50%));
+  transition: clip-path 1s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
-.button-53:hover:after {
-  bottom: 2px;
-  left: 2px;
+.link-one:hover::before {
+  clip-path: circle(100% at 50% 50%);
 }
 
-@media (min-width: 768px) {
-  .button-53 {
-    padding: 3px 5px 10px 5px;
-    font-size: 12px;
-  }
+.link-one::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #151515;
+
+  clip-path: polygon(
+    40% 0%,
+    60% 0%,
+    60% 0%,
+    40% 0%,
+    40% 100%,
+    60% 100%,
+    60% 100%,
+    40% 100%
+  );
+
+  transition: clip-path 1s cubic-bezier(0.65, 0, 0.35, 1);
 }
+
+.link-one:hover::after {
+
+  clip-path: polygon(
+    40% 10%,
+    60% 10%,
+    60% 35%,
+    40% 35%,
+    40% 90%,
+    60% 90%,
+    60% 65%,
+    40% 65%
+  );
+}
+
+.link-two {
+  color: #f27b9b;
+  transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
+}
+
+.link-two:hover {
+  color: #111;
+  transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.link-two::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  clip-path: polygon(
+    0% -20%,
+    100% -30%,
+    100% -10%,
+    0% 0%,
+    0% 130%,
+    100% 120%,
+    100% 100%,
+    0% 110%
+  );
+  background-color: #f27b9b;
+
+  transition: clip-path 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.link-two:hover::before {
+  clip-path: polygon(
+    0% 10%,
+    100% 0%,
+    100% 20%,
+    0% 30%,
+    0% 100%,
+    100% 90%,
+    100% 70%,
+    0% 80%
+  );
+}
+
+.link-two::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%) rotate(0deg) scale(0);
+  transition: transform 1s ease;
+
+  background-color: #f27b9b;
+}
+
+.link-two:hover::after {
+  transform: translate(50%, -50%) rotate(135deg) scale(1);
+}
+
+

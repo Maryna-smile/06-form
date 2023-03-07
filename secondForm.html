@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Form2</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/secondForm.css">
+</head>
+<body>
+  <div class="box">
+    <!-- обов'язково має бути enctype="multipart/form-data", якщо форма із вкладеннями -->
+    <form id="ajax-contact-form" enctype="multipart/form-data" method="post">
+      <div class="form-group">
+        <label for="nameFF">Им'я та прізвище:</label>
+        <input id="nameFF" name="nameFF" type="text" required placeholder="Іван Іванов ">
+      </div>
+      <div class="form-group">
+        <label for="contactFF">E-mail:</label>
+        <input id="contactFF" name="contactFF" type="email" required placeholder="ivanov@gmail.com">
+      </div>
+      <div class="form-group">
+        <label for="telFF">Телефон:</label>
+        <input id="telFF" name="telFF" type="tel" required placeholder="099 13-84-226">
+      </div>
+      <div class="form-group">
+        <label for="projectFF">Повідомлення</label>
+        <textarea id="projectFF" name="projectFF" cols="40" rows="3" placeholder="напиши цікавий факт про себе"></textarea>
+      </div>
+      <div class="control-file">
+        <label for="fileFF">Прикріпіть файл:</label>
+        <input id="fileFF" name="fileFF" type="file">
+      </div>
+      <button class="btn" type="submit" id="submitFF">Надіслати повідомлення</button>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,81 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="styles/normalize.css" />
-	<link rel="stylesheet" href="styles/style.css" />
-	<title>Form</title>
-</head>
-<body>
-	<form>
-		<fieldset>
-			<legend>Персональне 1:</legend>
-			<div class="flex">
-				<label>Повне ім’я</label>
-				<input class="input-text" type="text" name="name" placeholder="Іванов Іван Іванович" required />
-			</div>
-			<div class="flex">
-				<label>Email</label>
-				<input type="email" name="last name" placeholder="Ivanov@gmaail.com" required />
-			</div>
-		</fieldset>
-		<fieldset>
-			<legend>Безпека</legend>
-			<div class="flex">
-				<label>Пароль</label>
-				<input type="password" name="password" required />
-			</div>
-			<div class="flex">
-				<label>Підтвердження пароля</label>
-				<input type="password" name="password" required />
-			</div>
-		</fieldset>
-		<fieldset>
-			<legend>Персональне 2:</legend>
-			<div class="flex">
-				<label>Стать</label>
-				<div class="mail">
-					<label>Жіноча</label>
-					<input class="male" type="radio" name="male" />
-					<label>Чоловіча</label>
-					<input class="male" type="radio" name="male" />
-				</div>
-			</div>
-			<div class="flex">
-				<label>Вік</label>
-				<input type="number" name="age" min="18" max="100" required />
-			</div>
-		</fieldset>
-		<div class="general">
-			<div class="flex">
-				<label>Курс</label>
-				<select name="course" autofocus required>
-					<option value="" disabled selected>оберіть курс</option>
-					<option value="2">Front-End</option>
-					<option value="3">Back-End</option>
-					<option value="4">Project Managementd</option>
-					<option value="5">QA Manual</option>
-				</select>
-			</div>
-			<div class="addres">
-				<div class="flex">
-					<label>Повна адреса проживання</label>
-					<textarea name="adress" cols="25" rows="5"
-						placeholder="країна, область, населений пункт, вулиця, будинок"></textarea>
-				</div>
-			</div>
-			<input type="checkbox" name="agreement" required class="agreement" /> Я
-			погоджуюсь із обробкою персональних даних
-		</div>
-		<div class="buttons">
-			<button class="button-53" type="reset">Очистити форму</button>
-			<button class="button-53" type="submit">
-				Зареєструватись
-			</button>
-		</div>
-	</form>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <div class="background-one">
+      <div class="link-container">
+        <a class="link-one" href="firstForm.html">First form</a>
+      </div>
+    </div>
+    <div class="background-two link-container">
+      <a
+        class="link-two"
+        href="secondForm.html"
+        >Better form</a>
+    </div>
+  </body>
 </html>

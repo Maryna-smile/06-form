@@ -1,0 +1,59 @@
+body,
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+.box {
+  width: 100%;
+  max-width: 400px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+}
+.form-group input,
+.form-group textarea {
+  width: calc(100% - 24px);
+  font-size: 16px;
+  padding: 6px 12px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group textarea {
+  resize: none;
+}
+.control-file input[type="file"] {
+  font-size: 16px;
+  display: block;
+  margin-top: 7px;
+}
+.control-file {
+  margin-bottom: 20px;
+}
+.box button {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  color: #222;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  border: 1px solid #fff;
+  padding: 6px 0;
+  transition: 0.2s;
+}
+.box button:hover {
+  background-color: #222;
+  color: #fff;
+}
+.box button:focus {
+  outline: none;
+}
